@@ -1,0 +1,68 @@
+{% extends 'bank/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}   
+{% block content %}
+
+
+
+<!-- main-slider -->
+<section class="w3l-main-slider" id="home">
+  <div class="companies20-content">
+      <div class="owl-one owl-carousel owl-theme">
+          <div class="item">
+              <li>
+                  <div class="slider-info banner-view bg bg2">
+                      <div class="banner-info">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-lg-6 banner-info-bg">
+                                        <h5>Get started and manage your account </h5>
+                                        <p class="mt-md-4 mt-3">Our Card is the best option if you are looking for
+                                            high-quality and reliable banking services. We provide reliable services for
+                                            you
+                                        </p>
+                                      <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="{% url 'profile' %}"> Manage Account
+                                          </a>
+                                      <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="{% url 'about' %}">
+                                          Read More</a>
+                                  </div>
+                                  <div class="col-lg-5 col-md-8 img offset-lg-1 mt-lg-0 mt-4">
+                                      <img src="{% static 'bank/assets/images/card1.png' %}" alt="img"
+                                          class="img-fluid radius-image-curve" />
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+          </div>
+          <div class="item">
+              <li>
+                  <div class="slider-info  banner-view banner-top1 bg bg2">
+                      <div class="banner-info">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-lg-6 banner-info-bg">
+                                        <h5>The most convenient bank card in your wallet </h5>
+                                        <p class="mt-md-4 mt-3">Our Card is the best option if you are looking for
+                                            high-quality and reliable banking services. We provide reliable services for
+                                            you
+                                        </p>
+                                      <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="#book"> Book a
+                                          card</a>
+                                      <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="{% url 'about' %}">
+                                          Read More</a>
+                                  </div>
+                                  <div class="col-lg-5 col-md-8 img offset-lg-1 mt-lg-0 mt-4">
+                                      <img src="{% static 'bank/assets/images/card2.png' %}" alt="img"
+                                          class="img-fluid radius-image-curve" />
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+          </div>
+</section>
+
+{% endblock %}
